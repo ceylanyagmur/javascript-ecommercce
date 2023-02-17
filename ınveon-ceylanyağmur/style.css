@@ -1,0 +1,91 @@
+
+
+
+.pagination{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 50%;
+  }
+
+ .pagination .icon{
+  border-radius: 40%;
+  background-size: 10%;
+  padding: 9px;
+    background-color: rgb(128, 128, 128);
+  }
+  .pagination .icon:hover{
+    background-color: rgba(255, 136, 0, 0.911);
+    color: aliceblue;
+  }
+
+
+  @media (max-width: 996px) {
+    .pagination .icon{
+      
+max-width: 30%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pagination .icon{
+        max-width: 20%;
+    }
+  }
+  
+  @media (max-width: 567px) {
+    .pagination .icon{
+        max-width: 10%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

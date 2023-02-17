@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inveon-ceylanyağmur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" >
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            </div>
+        </div>
+    </nav>
+    <main>       
+        <div class="container">
+
+            <div class="title">
+                <h2 style="margin-left: 80%;">inve<span style="color: red;">o</span>n</h2>
+    
+              
+            </div>
+    
+    
+
+
+
+
+
+
+            <div class="filters d-flex p-2 mt-2" > 
+                <div class="d-flex align-items-center ms-auto">
+                    <p>Görünüm: </p>
+                    <div onclick="displayRow()" class="p-2">
+                        <img src="./assets/icons/layout-three-columns.svg" style="cursor: pointer;" alt="">
+                    </div>
+                    <div onclick="displayColumn()" style="cursor: pointer;" class="p-2">
+                        <img src="./assets/icons/layout-three-columns.svg" alt="" style="transform: rotate(90deg);">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12 col-sm-4 order-1 order-sm-1 mb-2">
+                    <div class="border p-2">
+                        <p class="header border-bottom pb-1" style="margin-left:24px ;">Alt Katagoriler</p>
+                        <div class="categoryItems mt-2 d-flex gap-1 flex-wrap">
+                            <ul class="block-content" style="list-style-type:none;">
+                                <li>
+                                  
+                                  <label for="">
+                                    <span>Tencere</span>
+                                    <small>(10)</small>
+                                  </label>
+                                </li>
+                    
+                                <li>
+                                 
+                                  <label for="">
+                                    <span>Tava</span>
+                                    <small>(7)</small>
+                                  </label>
+                                </li>
+                    
+                                <li>
+                                  
+                                  <label for="">
+                                    <span>Sepet</span>
+                                    <small>(3)</small>
+                                  </label>
+                                </li>
+                    
+                                <li>
+                                  
+                                  <label for="">
+                                    <span>Çatal</span>
+                                    <small>(3)</small>
+                                  </label>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 order-2 order-sm-2">
+                    <div class="displayRow border py-3 px-3">
+                       
+                        <div class="row py-2">
+                            <div class="col-md-6 col-xl-4 mb-3">
+                                <div class="py-3 px-3 border border-1">
+                                    <div>
+                                        <img class="img-fluid" src="./assets/icons/i (5).jpg" alt="">
+                                    </div>
+                                    <div class="mt-2">
+                                        <h6>Karaca süper fres <br> 5 lt A155</h6>
+                                    </div>
+                                    
+                                    <div style="text-align: center;">
+                                        <span style="background-color: red; color: aliceblue;"> ½32</span> <del>150tl</del>   <br>80tl
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4 mb-3">
+                                <div class="py-3 px-3 border border-1">
+                                    <div>
+                                        <img class="img-fluid" src="./assets/icons/i (5).jpg" alt="">
+                                    </div>
+                                    <div class="mt-2">
+                                        <h6>Karaca süper fres <br> 5 lt A155</h6>
+                                    </div>
+                                   
+                                    <div style="text-align: center;">
+                                        <span style="background-color: red; color: aliceblue;"> ½32</span>  <del>150tl</del>   <br>80tl
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4 mb-3">
+                                <div class="py-3 px-3 border border-1">
+                                    <div>
+                                        <img class="img-fluid" src="./assets/icons/i (2).jpg" alt="">
+                                    </div>
+                                   
+                                    
+                                    
+                                    <div style="text-align: center;">
+                                        <div class="mt-2">
+                                            <h6>Karaca süper fres <br> 5 lt A155</h6>
+                                        </div>
+                                        <span style="background-color: red; color: aliceblue;"> ½32</span>  <del>150tl</del>   <br>80tl
+                                    </div>
+                                    <div class="tit" style="background-color:gray; color: rgb(98, 255, 0);">Sepette %12 indirimli fiyat <br> <span  style="color: black;">171,51 tl</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="displayColumn border py-3 px-2 " style="display: none;">
+                        
+                    <div class="py-2">
+                        <div class="mb-3">
+                            <div class="border p-2 w-100 mb-2">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="img-fluid" style="height:100%;object-fit: cover;"
+                                                src="./assets/icons/i (5).jpg" alt="">
+                                        </div>
+                                        
+                                    </div>
+                                   
+                                    
+                                        <div class="col-md-8 mt-sm-2 " style="margin-top: 50vh;" >
+                                            <h6 >Karaca süper fres <br> 5 lt A155</h6>
+                                      
+                                        <span style="background-color: red; color: aliceblue;"> ½32 </span> <del>150tl</del>   <br>80tl
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="border p-2 w-100 mb-2">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="img-fluid" style="height: 100%;object-fit: cover;"
+                                                src="./assets/icons/i (4).jpg" alt="">
+                                            </div>
+                                               
+                                                   
+                                                </div>
+                                                <div class="col-md-8 mt-sm-2 ">
+                                                    <h6>Karaca süper fres <br> 5 lt A155</h6>
+                                                    
+                                                        <span style="background-color: red; color: aliceblue;"> ½32 </span> <del>150tl</del>   <br>80tl
+                                                    </div>
+                                                </div>
+                                </div>
+                
+                               
+                                        
+                                
+                                  
+                                   
+                                
+                                <div class="border p-2 w-100 mb-2">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="img-fluid" style="height: 100%;object-fit: cover;"
+                                            src="./assets/icons/i (5).jpg" alt="">
+                                       
+                                        </div>
+                                    </div>
+                                   
+                                        <div class="col-md-8 mt-sm-2 ">
+                                            <h6>Karaca süper fres <br> 5 lt A155</h6>
+                                       
+                                            <span style="background-color: red; color: aliceblue;"> ½32  </span><del>150tl</del>   <br>80tl
+                                        </div>
+                                            <div class="tit" style="margin-right:70%; background-color:gray; color: rgb(98, 255, 0);">Sepette %12 indirimli fiyat <br> <span  style="color: black;">171,51 tl</span></div>
+                                        
+                                       
+                                    </div>
+                                    </div>
+                                
+                                </div>
+                                   
+                               
+
+
+
+
+
+
+
+
+
+                       
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+       
+
+
+
+
+
+
+    </main>
+
+    <ul class="pagination">
+        <span class="icon">1</span>
+        <span class="icon">2</span>
+        <span class="icon">3</span>
+        <span class="icon">4</span>
+        <span class="icon">5</span>
+        <span class="icon">6</span>
+        <span class="icon">7</span>
+        
+        
+        <span class="icon">...</span>
+        <span class="icon">50</span>
+      </ul>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
